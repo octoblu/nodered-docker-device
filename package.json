@@ -1,0 +1,24 @@
+{
+  "name": "nodered-docker-device",
+  "version": "0.1.0",
+  "description": "register nodered device on meshblu",
+  "main": "server.js",
+  "author": "Jade Meskill",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/npm/npm.git"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.3",
+    "sinon": "^1.10.3",
+    "sinon-chai": "^2.5.0"
+  },
+  "scripts": {
+    "test": "mocha -r test/test_helper.js --recursive test",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "underscore": "^1.6.0"
+  }
+}
