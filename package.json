@@ -10,15 +10,19 @@
   },
   "devDependencies": {
     "chai": "^1.9.1",
+    "coffee-script": "^1.7.1",
+    "growl": "^1.8.1",
     "mocha": "^1.21.3",
     "sinon": "^1.10.3",
     "sinon-chai": "^2.5.0"
   },
   "scripts": {
-    "test": "mocha -r test/test_helper.js --recursive test",
-    "start": "node server.js"
+    "test": "mocha --compilers coffee:coffee-script/register -r coffee-script -r test/test_helper.coffee --recursive test/",
+    "start": "coffee server.coffee"
   },
   "dependencies": {
-    "underscore": "^1.6.0"
+    "skynet": "0.0.45",
+    "underscore": "^1.6.0",
+    "winston": "^0.7.3"
   }
 }
