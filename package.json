@@ -24,7 +24,7 @@
     "start": "coffee server.coffee"
   },
   "dependencies": {
-    "skynet": "0.0.45",
+    "skynet": "0.0.46",
     "underscore": "^1.6.0",
     "winston": "^0.7.3"
   }

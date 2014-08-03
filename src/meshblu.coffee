@@ -9,6 +9,6 @@ class Meshblu
     @connection.register {owner: owner_id, type: 'nodered-docker'}, callback
 
   close: =>
-    @connection.socket.close()
+    @connection.close()
   
 module.exports = Meshblu
